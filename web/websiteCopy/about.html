@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>About</title>
+        <link rel="icon" href="P:\c c++\web\website\RedStore_Img\images\titlelogo.png" type="image/x-icon">
+        <link rel="stylesheet" href="style3.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Nunito:wght@700;800&family=Poppins:ital,wght@0,200;0,300;0,600;1,500&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+      
+    
+      <div class="header">
+        <div class="container">
+            <div class="navbar">
+              <img src="P:\c c++\web\website\RedStore_Img\images\logo.png" width="125rem">
+              <div class="navmenu">
+                <nav id="navid">
+                  
+                <ul>
+                  
+                  <li><a class="bold" href="P:\c c++\web\website - Copy\index2.html" id="active">Home</a></li>
+                  <li><a class="bold" href="P:\c c++\web\website - Copy\Order.html">Order</a></li>
+                  <li><a class="bold" href="">Contact</a></li>
+                </ul>
+              </nav>
+              <input type="checkbox" id="checkbox">
+              <label for="checkbox" class="toggle">
+                  <div class="bars" id="bar1"></div>
+                  <div class="bars" id="bar2"></div>
+                  <div class="bars" id="bar3"></div>
+              </label>
+              </div>
+            </div>
+            <div class="navslide">
+              <ul>
+                <li><a class="bold" href="P:\c c++\web\website\index2.html" id="active">Home</a></li>
+                <li><a class="bold" href="P:\c c++\web\website\Order.html">Order</a></li>
+                <li><a class="bold" href="">Contact</a></li>
+              </ul>
+            </div>
+            <div class="wrapper">
+              <div class="col1">
+                <span class="topline">Hello</span>
+                <h1>I'm <span id="element"></span></h1>
+                <p>I'm skilled self taught sketch artist and web designer passionate about creating visually striking digital experiences.  </p>
+                  <a href="http://wa.me/+916392802689"><button class="btn" role="button">Contact Me</button></a>
+              </div>
+              <div class="col2">
+                <img src="P:\c c++\web\website\RedStore_Img\images\my.png" alt="">
+              </div>
+              <div class="social">
+                <a href="https://instagram.com/im_artifex?igshid=ZDdkNTZiNTM="><img src="P:\c c++\web\website\RedStore_Img\images\instagram.png" alt=""></a>
+                <a href=""><img src="P:\c c++\web\website\RedStore_Img\images\facebook.png" alt=""></a>
+                <a href=""><img src="P:\c c++\web\website\RedStore_Img\images\twitter.png" alt=""></a>
+                <a href="http://wa.me/+916392802689"><img src="P:\c c++\web\website\RedStore_Img\images\whatsapp.png" alt=""></a>
+              </div>
+            </div>
+        </div>
+      </div>
+      <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed('#element', {
+          strings: ['Artist', 'Coder'],
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 80,
+          backDelay: 1500
+        });
+      </script>
+      <script>
+        let menu= document.querySelector('#checkbox');
+        let navbar= document.querySelector('.navslide');
+        menu.onclick = () =>{
+          
+          
+          navbar.classList.toggle('open');
+      
+        }
+      
+      </script>  
+</body>
+</html>

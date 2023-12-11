@@ -1,0 +1,340 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font-family:"Poppins",sans-serif;
+}  
+			
+a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+h1{ 
+    font-family: 'Ubuntu', sans-serif;  
+    font-weight: 800;
+    font-size: 7rem;
+    margin: 1.6rem 0;
+}
+
+
+span{font-weight: 800;
+    font-size: 7rem;
+    margin: 1.6rem 0;
+    color: #4700b3;
+    
+}
+p{
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin: 1.6rem 0;
+}
+.col2{
+    width: 100rem;
+}
+.col2 img{
+    width: 100%;
+    height: auto;
+} 
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items:center;
+    margin:0;
+    height: 45rem;
+}
+.col2 img{
+    transform: scale(0.7);
+}
+
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #3a3a3a;
+}
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #4316ab;
+}
+.header{ 
+    
+    
+   background: #fff;
+
+    height: 720px;
+}
+
+.container{
+    height: 100vh;
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav{
+   
+    width: 25rem;
+    text-align: right;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50px;
+    
+    box-shadow: 0 25px 20px -20px rgb(0, 0, 0, 1);
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+        display: inline-block;
+        margin-right: 20px;
+        position:relative;
+        transition: transform 0.5s;
+}
+nav ul li:hover{
+    transform:scale(1.2);
+    }
+    .bold{
+        text-decoration: none;
+        transition: font-weight 0.3s;
+    }
+    .bold:hover{
+        font-weight: bold;
+    }
+
+
+
+        /* for button */
+        .btn {
+            margin-top: 10px;
+            background:  #4e1dc0;
+            border-radius: 999px;
+            box-shadow: #4316ab 0 10px 20px -10px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            opacity: 1;
+            outline: 0 solid transparent;
+            padding: 8px 18px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            width: fit-content;
+            word-break: break-word;
+            border: 0;
+            transition: background 0.5s;
+          }
+          .btn:hover{
+              background: #300078;
+          
+          }
+
+
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.social img{
+    transition: transform 0.5s;
+}
+.social img:hover{
+    transform:scale(1.3);
+
+}
+/* for menu bar */
+.navhide{
+    display: none;
+  }
+  .navslide ul{
+    display: none;
+  }
+  #checkbox {
+    display: none;
+  }
+/* for phone */
+@media (max-width: 1000px){
+    .navbar{
+        height: 20rem;
+    }
+    .navmenu{
+        transform: scale(2.5);
+        margin-right: 50px;
+    }
+    .navbar img {
+        width: 30rem;
+    }
+    nav{
+        display: none;
+    }
+    .wrapper{
+        flex-direction: column;
+        height: 180rem;
+    }
+    .btn{
+        display: none;
+    }
+    .topline{
+        font-size: 7rem;
+    }
+    .navslide{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 30%;
+        background: linear-gradient(to bottom, #722ed8, #4a00e0);
+        right: 0%;
+        z-index: 999;
+        opacity: 0;
+        border-radius:20px;
+        box-shadow: 0 20px 50px 2px rgb(0, 0, 0, 0.5);
+        transition: all .50s ease;
+    }
+    .navslide ul{
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        padding: 10px;
+        text-align: center;
+        height: 100%;
+    list-style-type: none;
+    }
+    .navslide ul li{
+        height: 20%;
+        margin-top: 50px;
+        
+    }
+.bold{
+    color: #fff;
+    font-size: 5rem;
+}
+nav ul li:hover{
+    transform:scale(1.2);
+    }
+    .bold{
+        text-decoration: none;
+        transition: font-weight 0.3s;
+    }
+    .bold:hover{
+        font-weight: bold;
+        color:#DA22FF;
+    }
+    .navslide.open{
+        opacity: 1;
+        
+    }
+/* for menu bar */
+    
+      
+.toggle {
+    position:relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition-duration: .5s;
+  }
+  
+  .bars {
+    width: 100%;
+    height: 5px;
+    background-color: #4a00e0;
+    border-radius: 4px;
+  }
+  
+  #bar2 {
+    transition-duration: .8s;
+  }
+  
+  #bar1,#bar3 {
+    width: 70%;
+  }
+  
+  #checkbox:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+  }
+  .navhide{
+  display: none;
+  }
+  
+
+    h1{
+        font-size: 13rem;
+    }
+    span {
+        font-size: 13rem;
+    }
+    p{
+        font-size: 4rem;
+    }
+    .col1{
+        width: 100%;
+    }
+    .col2 img{
+        transform: scale(1);
+    }
+
+    .social{
+        flex-direction: row;
+        width: 100%;
+        height: 15rem;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .social img{
+        transform: scale(2.8);
+    }
+}
+
+
+
+
+        

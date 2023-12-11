@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>About</title>
+        <link rel="icon" href="images\titlelogo2.png" type="image/x-icon">
+        <link rel="stylesheet" href="indexabout.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Nunito:wght@700;800&family=Poppins:ital,wght@0,200;0,300;0,600;1,500&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+      <header class="background">
+        
+          <svg class="ball1" width="658" height="658" viewBox="0 0 658 658" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_f_3_58)">
+            <circle cx="329" cy="329" r="271" fill="#9611FF"/>
+            </g>
+            <defs>
+            <filter id="filter0_f_3_58" x="0" y="0" width="658" height="658" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="29" result="effect1_foregroundBlur_3_58"/>
+            </filter>
+            </defs>
+            </svg>
+            <svg class="ball2" width="658" height="658" viewBox="0 0 658 658" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_f_3_58)">
+              <circle cx="329" cy="329" r="271" fill="#9611FF"/>
+              </g>
+              <defs>
+              <filter id="filter0_f_3_58" x="0" y="0" width="658" height="658" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+              <feGaussianBlur stdDeviation="29" result="effect1_foregroundBlur_3_58"/>
+              </filter>
+              </defs>
+              </svg>
+       
+      </header> 
+
+      <div class="header" id="header">
+        <div class="container">
+          <div class="navbar">
+            <img src="images\logo2.png" width="160rem">
+            <div class="navmenu">
+              <nav id="navid">
+                    
+                <ul>
+                  
+                  <li><a class="bold" href="index.html" id="active">Home</a></li>
+                  <li><a class="bold" href="order.html">Order</a></li>
+                  <li><a class="bold" href="">Contact</a></li>
+                </ul>
+              </nav>
+              <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="toggle">
+                    <div class="bars" id="bar1"></div>
+                    <div class="bars" id="bar2"></div>
+                    <div class="bars" id="bar3"></div>
+                </label>
+              
+            </div>
+          </div>
+          <div class="navslide">
+            <ul>
+            <li><a class="bold" href="index.html" id="active">Home</a></li>
+              <li><a class="bold" href="order.html">Order</a></li>
+              <li><a class="bold" href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="wrapper">
+            <div class="col1">
+              <span class="topline">Hello</span>
+              <h1>I'm <span id="element"></span></h1>
+              <p>I'm Piyush Vishwakarma, A skilled self taught sketch artist and web designer passionate about creating visually striking digital experiences.  </p>
+                <a href="http://wa.me/+916392802689"><button class="btn" role="button">Contact Me</button></a>
+            </div>
+            <div class="col2">
+              <img src="images\my.png" alt="" >
+
+              <div class="social">
+                <a href="https://instagram.com/im_artifex?igshid=ZDdkNTZiNTM="><img src="images\instagram.png" alt=""></a>
+                <a href=""><img src="images\facebook.png" alt=""></a>
+                <a href=""><img src="images\twitter.png" alt=""></a>
+                <a href="http://wa.me/+916392802689"><img src="images\whatsapp.png" alt=""></a>
+              </div>
+            </div>
+            
+          </div>
+    
+    
+        
+        </div>
+       </div>
+    
+     
+      <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed('#element', {
+          strings: ['Artist', 'Coder'],
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 80,
+          backDelay: 1500
+        });
+      </script>
+     <!-- for menu bar -->
+<script>
+  let menu= document.querySelector('#checkbox');
+  let navbar= document.querySelector('.navslide');
+  menu.onclick = () =>{
+    navbar.classList.toggle('open');
+  }
+</script>
+
+       
+</body>
+</html>
